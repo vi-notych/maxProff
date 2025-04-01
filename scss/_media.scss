@@ -157,6 +157,72 @@
       max-width: 250px;
     }
   }
+
+  .about {
+    &__items {
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 480px;
+      row-gap: 50px;
+      column-gap: 10px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0;
+      padding-left: 38px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 120px;
+        width: 6px;
+        bottom: 0;
+        left: 8px;
+        background-color: $grayLight;
+      }
+
+      &:first-child::before {
+        height: 70px;
+        border-radius: 3px;
+        left: 8px;
+      }
+
+      &:last-child::before {
+        border-radius: 3px;
+        left: 8px;
+      }
+
+      &:nth-child(4)::before {
+        height: 125px;
+        border-radius: 3px;
+      }
+
+      &:nth-child(5)::before {
+        height: 75px;
+        border-radius: 3px;
+        bottom: -5px;
+      }
+
+      &::after {
+        content: '';
+        bottom: 50%;
+        left: -2px;
+        transform: translateY(50%);
+        z-index: 1;
+      }
+    }
+
+    &__item-text {
+      text-align: start;
+      margin-left: 25px;
+    }
+
+    &__icon {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (max-width:768px) {
@@ -637,9 +703,53 @@
       margin-left: 0;
     }
   }
+
+  .about {
+    &__text {
+      margin-bottom: 40px;
+    }
+    &__items {
+      max-height: 1000px;
+      padding-left: 50px;
+    }
+
+    &__item {
+      &:nth-child(5)::before {
+        height: 125px;
+        border-radius: 0px;
+        bottom: 0px;
+      }
+      &:last-child::before {
+        height: 130px;
+        bottom: -30px;
+      }
+    }
+
+    &__icon {
+      flex: 0 0 50px;
+      height: 50px;
+      &::after {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &__img {
+      width: 50px;
+      &_control {
+        width: 40px;
+      }
+    }
+
+    &__item-text {
+      max-width: 400px;
+    }
+  }
+
 }
 
 @media(max-width:480px) {
+
   .example {
     &__items {
       padding: 20px 50px;
@@ -660,6 +770,12 @@
     &__slade {
       height: 350px;
       flex: 0 0 280px;
+    }
+  }
+
+  .about {
+    &__items {
+      padding-left: 20px;
     }
   }
 }
