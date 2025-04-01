@@ -223,6 +223,48 @@
       margin-bottom: 0;
     }
   }
+
+  .store {
+    &__items {
+      padding: 35px;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(2, auto);
+      column-gap: 20px;
+      row-gap: 30px;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 50px auto;
+      gap: 10px;
+      align-items: start;
+
+      &.one {
+        order: 1;
+      }
+
+      &.two {
+        order: 4;
+      }
+
+      &.three {
+        order: 2;
+      }
+
+      &.four {
+        order: 3;
+        grid-row: span 2;
+      }
+
+      &.five {
+        order: 5;
+      }
+    }
+
+    &__icon {
+      width: 46px;
+    }
+  }
 }
 
 @media (max-width:768px) {
@@ -297,7 +339,7 @@
   }
 
   .example {
-    padding: 40px 0 40px;
+    padding-block: 40px;
 
     &__title {
       margin-bottom: 35px;
@@ -338,6 +380,35 @@
     &__slade {
       height: 320px;
       flex: 0 0 255px;
+    }
+  }
+
+  .store {
+    &__items {
+      padding: 30px;
+      margin-inline: -35px;
+      grid-template-columns: 30% 36% 30%;
+      column-gap: 2%;
+      row-gap: 20px;
+    }
+
+    &__item {
+      grid-template-columns: 30px auto;
+    }
+
+    &__icon {
+      width: 30px;
+      &::after {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+    &__bg {
+      padding-bottom: 50%;
     }
   }
 }
@@ -659,6 +730,36 @@
       height: 260px;
     }
   }
+
+  .store {
+    &__items {
+      margin-inline: 0;
+      grid-template-columns: auto;
+    }
+
+    &__item {
+      gap: 20px;
+      &.one {
+        order: 1;
+      }
+
+      &.two {
+        order: 2;
+      }
+
+      &.three {
+        order: 3;
+      }
+
+      &.four {
+        order: 5;
+      }
+
+      &.five {
+        order: 4;
+      }
+    }
+  }
 }
 
 @media(max-width:550px) {
@@ -708,6 +809,7 @@
     &__text {
       margin-bottom: 40px;
     }
+
     &__items {
       max-height: 1000px;
       padding-left: 50px;
@@ -719,6 +821,7 @@
         border-radius: 0px;
         bottom: 0px;
       }
+
       &:last-child::before {
         height: 130px;
         bottom: -30px;
@@ -728,6 +831,7 @@
     &__icon {
       flex: 0 0 50px;
       height: 50px;
+
       &::after {
         width: 15px;
         height: 15px;
@@ -736,6 +840,7 @@
 
     &__img {
       width: 50px;
+
       &_control {
         width: 40px;
       }
