@@ -19,9 +19,9 @@
         <div class="header__mobile-btn">
           <span></span>
         </div>
-        <div class="header__logo logo">
+        <a class="header__logo logo" href="#">
           <span class="logo__m">M</span>ax<span class="logo__p">P</span>roff
-        </div>
+        </a>
         <a class="header__call-btn" href="tel:+72332222222"></a>
         <div class="header__mobile-menu">
           <button class="header__button button button__white" type="button">Калькулятор ремонта</button>
@@ -29,31 +29,33 @@
         <nav data-da=".header__body,1050,0" class="header__menu">
           <ul class="header__list">
             <li class="header__link">
-              <a href="#">Цены</a>
+              <a href="#price">Цены</a>
             </li>
             <li class="header__link">
-              <a href="#">Услуги</a>
+              <a href="#example">Услуги</a>
             </li>
             <li class="header__link">
               <a href="#">Портфолио</a>
             </li>
             <li class="header__link">
-              <a href="#">Акции</a>
+              <a href="#action">Акции</a>
             </li>
             <li class="header__link">
-              <a href="#">Преимущества</a>
+              <a href="#advantage">Преимущества</a>
             </li>
             <li class="header__link">
               <a href="#">Блог</a>
             </li>
             <li class="header__link">
-              <a href="#">Контакты</a>
+              <a href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div data-da=".header__mobile-menu,650,3" class="header__call">
-          <a href="tel:+72332222222" class="header__phone">+7(233)222-22-22</a>
-          <p class="header__timing">08:00 - 22:00, без выходных</p>
+        <div data-da=".header__mobile-menu,650,3" class="header__call call">
+          <a href="tel:+72332222222" class="call__phone">+7(233)222-22-22</a>
+          <p class="call__timing">
+            08:00 - 22:00, без выходных
+          </p>
         </div>
         <div class="header__socials">
           <a href="#" class="header__social-icon">
@@ -180,25 +182,25 @@
             <p class="calculator__content-text">от <span>2450</span> руб/м2</p>
             <div class="calculator__items">
               <div class="calculator__item">
-                <div class="calculator__icon calculator__icon_tr">
+                <div class="calculator__icon icon__tr">
                   <img src="./img/calculator/icon-1.svg" alt="icon">
                 </div>
                 <p class="calculator__item-text">Оплата по факту <br /> приема работ</p>
               </div>
               <div class="calculator__item">
-                <div class="calculator__icon calculator__icon_br">
+                <div class="calculator__icon icon__br">
                   <img src="./img/calculator/icon-2.svg" alt="icon">
                 </div>
                 <p class="calculator__item-text">Замер и составление <br /> сметы БЕСПЛАТНО</p>
               </div>
               <div class="calculator__item">
-                <div class="calculator__icon calculator__icon-b">
+                <div class="calculator__icon icon__b">
                   <img class="calculator__item-img" src="./img/calculator/icon-3.svg" alt="icon">
                 </div>
                 <p class="calculator__item-text">Выезд сметчика</p>
               </div>
               <div class="calculator__item">
-                <div class="calculator__icon calculator__icon_bl">
+                <div class="calculator__icon icon__bl">
                   <img src="./img/calculator/icon-4.svg" alt="icon">
                 </div>
                 <p class="calculator__item-text">Гарантия 3 года</p>
@@ -323,7 +325,7 @@
       </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
       <div class="price_container container">
         <h2 class="price__title title">
           Цены на ремонт
@@ -490,7 +492,7 @@
       </div>
     </section>
 
-    <section class="example">
+    <section class="example" id="example">
       <div class="example__container container">
         <h2 class="example__title title">
           Примеры наших работ
@@ -619,7 +621,7 @@
       </div>
     </section>
 
-    <section class="action">
+    <section class="action" id="action">
       <div class="action__container container">
         <h2 class="action__title title">Акции</h2>
         <div class="action__slider">
@@ -666,7 +668,7 @@
         </p>
         <div class="about__items">
           <div class="about__item">
-            <div class="about__icon  about__icon_b">
+            <div class="about__icon icon__b">
               <img class="about__img" src="./img/about/1.svg" alt="icon">
             </div>
             <p class="about__item-text">
@@ -674,7 +676,7 @@
             </p>
           </div>
           <div class="about__item">
-            <div class="about__icon about__icon_tr">
+            <div class="about__icon icon__tr">
               <img class="about__img" src="./img/about/2.svg" alt="icon">
             </div>
             <p class="about__item-text">
@@ -682,7 +684,7 @@
             </p>
           </div>
           <div class="about__item">
-            <div class="about__icon about__icon_b">
+            <div class="about__icon icon__b">
               <img class="about__img" src="./img/about/3.svg" alt="icon">
             </div>
             <p class="about__item-text">
@@ -690,7 +692,7 @@
             </p>
           </div>
           <div class="about__item">
-            <div class="about__icon about__icon_t">
+            <div class="about__icon icon__t">
               <img class="about__img" src="./img/about/4.svg" alt="icon">
             </div>
             <p class="about__item-text">
@@ -698,7 +700,7 @@
             </p>
           </div>
           <div class="about__item">
-            <div class="about__icon about__icon_c">
+            <div class="about__icon icon__c">
               <img class="about__img about__img_control" src="./img/about/5.svg" alt="icon">
             </div>
             <p class="about__item-text">
@@ -740,7 +742,7 @@
         </h2>
         <div class="store__items">
           <div class="store__item one">
-            <div class="store__icon store__icon_b">
+            <div class="store__icon icon__b">
               <img class="store__img" src="./img/store/1.svg" alt="icon">
             </div>
             <div class="store__text">
@@ -748,7 +750,7 @@
             </div>
           </div>
           <div class="store__item two">
-            <div class="store__icon store__icon_c">
+            <div class="store__icon icon__c">
               <img class="store__img" src="./img/store/2.svg" alt="icon">
             </div>
             <div class="store__text">
@@ -756,7 +758,7 @@
             </div>
           </div>
           <div class="store__item three">
-            <div class="store__icon store__icon_c">
+            <div class="store__icon icon__c">
               <img class="store__img" src="./img/store/3.svg" alt="icon">
             </div>
             <div class="store__text">
@@ -764,17 +766,17 @@
             </div>
           </div>
           <div class="store__item four">
-            <div class="store__icon store__icon_bl">
+            <div class="store__icon icon__bl">
               <img class="store__img" src="./img/store/4.svg" alt="icon">
             </div>
             <div class="store__text">
-              250 видов обоев<br/>
-              25 видов ламината<br/>
+              250 видов обоев<br />
+              25 видов ламината<br />
               50 видов плитки и плинтуса
             </div>
           </div>
           <div class="store__item five">
-            <div class="store__icon store__icon_c">
+            <div class="store__icon icon__c">
               <img class="store__img" src="./img/store/5.svg" alt="icon">
             </div>
             <div class="store__text">
@@ -794,9 +796,299 @@
 
     </section>
 
+    <section class="quality">
+      <h2 class="quality__title title container">
+        Многоуровневый контроль качества
+      </h2>
+      <p class="quality__slogan container">
+        Ремонтируем квартиры без дефектов благодаря многоуровневому контролю качества:
+      </p>
+      <div class="quality__body">
+        <div class="quality__photo">
+          <img class="quality__img" src="./img/quality.jpg" alt="photo">
+        </div>
+        <div class="quality__content">
+          <div class="quality__container container">
+            <div class="quality__items">
+              <div class="quality__item">
+                <div class="quality__number">
+                  <span>01</span>/05
+                </div>
+                <h4 class="quality__subtitle subtitle">
+                  Главный инженер
+                </h4>
+                <p class="quality__text">
+                  Наблюдает за работой в режиме реального времени. Проверяет поставщиков материалов и оборудования
+                </p>
+              </div>
+              <div class="quality__item">
+                <div class="quality__number">
+                  <span>02</span>/05
+                </div>
+                <h4 class="quality__subtitle subtitle">
+                  Отдел технического конроля
+                </h4>
+                <p class="quality__text">
+                  Проверяет качество работ на всех объектах-решает спорные ситуации
+                </p>
+              </div>
+              <div class="quality__item">
+                <div class="quality__number">
+                  <span>03</span>/05
+                </div>
+                <h4 class="quality__subtitle subtitle">
+                  Видео и фото контроль
+                </h4>
+                <p class="quality__text">
+                  Онлайн-контроль хода ремонта 24/7
+                </p>
+              </div>
+              <div class="quality__item">
+                <div class="quality__number">
+                  <span>04</span>/05
+                </div>
+                <h4 class="quality__subtitle quality__subtitle_height  subtitle">
+                  Начальник участка
+                </h4>
+                <p class="quality__text">
+                  Оценивает соответствие процесса ремонта условиям договора по срокам и стоимости.
+                </p>
+              </div>
+              <div class="quality__item">
+                <div class="quality__number">
+                  <span>05</span>/05
+                </div>
+                <h4 class="quality__subtitle quality__subtitle_height subtitle">
+                  Прораб
+                </h4>
+                <p class="quality__text">
+                  Приезжает на объект 4-5 раз в неделю, контролирует работу мастеров. Проверяет каждый этап по 120
+                  пунктам соответсвия.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="advantage__container container">
+        <div class="advantage__title title">
+          Наши преимущества
+        </div>
+        <div class="advantage__items">
+          <div class="advantage__item">
+            <div class="advantage__icon icon__t">
+              <img class="advantage__img" src="./img/advantage/1.svg" alt="">
+            </div>
+            <h4 class="advantage__subtitle subtitle">
+              Работа без предоплаты
+            </h4>
+            <p class="advantage__text">
+              Мы не берём предоплату. Вы платите за каждый этап работ после подписания акта.
+            </p>
+          </div>
+          <div class="advantage__item">
+            <div class="advantage__icon icon__c">
+              <img class="advantage__img" src="./img/advantage/2.svg" alt="">
+            </div>
+            <h4 class="advantage__subtitle subtitle">
+              Стоимость ремонта не меняется
+            </h4>
+            <p class="advantage__text">
+              Прозрачный бюджет. Финальная смета фиксируется в согласованных актах.
+            </p>
+          </div>
+          <div class="advantage__item">
+            <div class="advantage__icon icon__b">
+              <img class="advantage__img" src="./img/advantage/3.svg" alt="">
+            </div>
+            <h4 class="advantage__subtitle subtitle">
+              Мастера-славяне с опытом от 5 лет
+            </h4>
+            <p class="advantage__text">
+              Мастера - славяне. В штате 250 мастеров с опытом работы от 5 лет, 20 прорабов с опытом от 8 лет и
+              инженерным
+              образованием.
+            </p>
+          </div>
+          <div class="advantage__item">
+            <div class="advantage__icon icon__br">
+              <img class="advantage__img" src="./img/advantage/4.svg" alt="">
+            </div>
+            <h4 class="advantage__subtitle subtitle">
+              За нами не переделывают
+            </h4>
+            <p class="advantage__text">
+              Качество работ для нас в приоритете. Даём гарантию на все виды работ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__top-inner container">
+        <div class="footer__top-wrap">
+          <h4 class="footer__top-subtitle">Нужна консультация?</h4>
+          <p class="footer__top-text">
+            Подробно расскажем о наших услугах, видах работ и типовых проектах, рассчитаем стоимость и подготовим
+            индивидуальное предложение!
+          </p>
+        </div>
+        <button class="footer__top-btn button">Оставить заявку</button>
+      </div>
+    </div>
+    <div class="footer__body">
+      <div class="footer__body-container container">
+        <div class="footer__pay">
+          <a class="footer__pay-logo logo" href="#">
+            <span class="logo__m">M</span>ax<span class="logo__p">P</span>roff
+          </a>
+          <div class="footer__pay-wrap">
+            <h5 class="footer__pay-subtitle">
+              Любая форма оплаты
+            </h5>
+            <div class="footer__pay-icons">
+              <img src="./img/bottom/group.svg" alt="icon">
+              <img src="./img/bottom/sber.svg" alt="icon">
+              <img src="./img/bottom/visa.svg" alt="icon">
+              <img src="./img/bottom/alfa.svg" alt="icon">
+              <img src="./img/bottom/master.svg" alt="icon">
+            </div>
+          </div>
+        </div>
+        <div class="footer__service">
+          <div class="footer__service-subtitle">
+            Наши услуги
+          </div>
+          <ul class="footer__service-list">
+            <li class="footer__service-item">
+              <a href="#" class="footer__service-link">
+                Квартиры
+              </a>
+            </li>
+            <li class="footer__service-item">
+              <a href="#" class="footer__service-link">
+                Коттеджи
+              </a>
+            </li>
+            <li class="footer__service-item">
+              <a href="#" class="footer__service-link">
+                Таунхаусы
+              </a>
+            </li>
+            <li class="footer__service-item">
+              <a href="#" class="footer__service-link">
+                Офисы
+              </a>
+            </li>
+            <li class="footer__service-item">
+              <a href="#" class="footer__service-link">
+                Инженерные системы
+              </a>
+            </li>
+            <li class="footer__service-item">
+              <a href="#" class="footer__service-link">
+                География работ
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">
+                Портфолио
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">
+                Стоимость
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">
+                Акции
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">
+                o компании
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">
+                Статьи
+              </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <address class="footer__contacts">
+          <div class="footer__contacts-call call">
+            <a href="tel:+72332222222" class="call__phone call__phone-white">+7(233)222-22-22</a>
+            <p class="call__timing">
+              08:00 - 22:00, без выходных
+            </p>
+          </div>
+          <button type="submit" class="footer__contacts-btn">Заказать звонок</button>
+          <div class="footer__contacts-post">
+            <a href="mailto:maxproff@gmail.com" class="footer__contacts-mail">maxproff@gmail.com</a>
+          </div>
+          <div class="footer__contacts-location">
+            г.Москва, ул.Бутлерова д.2 офис 120
+          </div>
+        </address>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner container">
+        <div class="footer__bottom-copyright">
+          <p class="footer__bottom-name">
+            <span>с</span>2021 «MaxProff»
+          </p>
+          <a class="footer__bottom-legal" href="#">
+            Правовая информация
+          </a>
+        </div>
+        <ul data-da=".footer__pay,768" data-da=".footer__bottom-inner,650" class="footer__bottom-socials">
+          <a href="#" class="footer__bottom-link">
+            <img src="./img/bottom/facebook.svg" alt="icon" class="footer__bottom-icon">
+          </a>
+          <a href="#" class="footer__bottom-link">
+            <img src="./img/bottom/youtube.svg" alt="icon" class="footer__bottom-icon">
+          </a>
+          <a href="#" class="footer__bottom-link">
+            <img src="./img/bottom/instagram.svg" alt="icon" class="footer__bottom-icon">
+          </a>
+          <a href="#" class="footer__bottom-link">
+            <img src="./img/bottom/telegram.svg" alt="icon" class="footer__bottom-icon">
+          </a>
+          <a href="#" class="footer__bottom-link">
+            <img src="./img/bottom/vk.svg" alt="icon" class="footer__bottom-icon">
+          </a>
+          <a href="#" class="footer__bottom-link">
+            <img src="./img/bottom/odnoklassniki.svg" alt="icon" class="footer__bottom-icon">
+          </a>
+        </ul>
+        <p class="footer__bottom-text">
+          Сайт не является публичной офертой и носит информационный характер
+        </p>
+        <a href="#" class="footer__bottom-map-site">
+          <span>Карта сайта</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/js/main.js"></script>

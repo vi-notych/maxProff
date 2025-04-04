@@ -1,4 +1,5 @@
 @import "_vars";
+@import "_mixin";
 
 html,
 body {
@@ -18,9 +19,10 @@ body {
 
 .main {
   flex-grow: 1;
+
   &.bg-color {
     padding-top: 30px;
-    background-color: rgb(0,0,0, 0.6);
+    background-color: rgb(0, 0, 0, 0.6);
   }
 }
 
@@ -35,6 +37,13 @@ body {
   font-size: 28px;
   font-weight: 400;
   color: black;
+  cursor: pointer;
+  scale: 1;
+  transition: scale 0.4s;
+
+  &:hover {
+    scale: 1.03;
+  }
 
   &__m {
     color: $blueDark;
@@ -46,9 +55,66 @@ body {
 }
 
 .title {
-  font-size: clamp(30px, 5vw, 42px);
+  font-size: fluid(42, 32);
   font-weight: bold;
   text-align: center;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.icon {
+  &__tr::after {
+    top: 0;
+    right: 0;
+  }
+
+  &__t::after {
+    top: 0px;
+    right: 22px;
+  }
+
+  &__c::after {
+    bottom: 30%;
+      left: 30%;
+  }
+
+  &__br::after {
+    right: 0;
+    bottom: 0;
+  }
+
+  &__b::after {
+    bottom: 0;
+      left: 30%;
+  }
+
+  &__bl::after {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+.call {
+  &__phone {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: $dark;
+    padding-left: 20px;
+
+    &-white {
+      color: $white;
+      padding-left: 0;
+
+    }
+  }
+
+  &__timing {
+    margin-top: 5px;
+  }
 }
 
 .button {
